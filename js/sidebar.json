@@ -1,0 +1,22 @@
+[
+  {
+    "image": "./img/Browser.png",
+    "name": "Browse"
+  },
+  {
+    "image": "./img/SuggestAttraction.png",
+    "name": "Suggest Attraction"
+  },
+  {
+    "image": "./img/Videos.png",
+    "name": "Videos"
+  },
+  {
+    "image": "./img/Blog.png",
+    "name": "Blog"
+  },
+  {
+    "image": "./img/About.png",
+    "name": "About"
+  }
+]

@@ -1,0 +1,174 @@
+body,
+html{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.page{
+  height: 100vh;
+  min-width: 960px;
+  display: grid;
+  grid-template-columns: 8% 19% 73%;
+}
+.hide-sidebar{
+  grid-template-columns: 8% 92%; 
+}
+.active{
+  background-color: #72cdd2!important;
+  color: #fff!important;
+}
+.hide{
+  display: none;
+  transition: all 0.5 ease-in;
+}
+.choosed{
+  color: rgb(26, 182, 26);
+  font-weight: 600;
+  background-color: #1e2128;
+}
+/* side logo */
+.side-logo{
+  background-color: #313541;
+  color: #8298a0;
+}
+.side-logo-items{
+  height: fit-content;
+  font-size: 12px;
+}
+.logo-item img{
+  width: 36px;
+  margin-bottom: 3px;
+}
+.logo-item{
+  cursor: pointer;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+/* side bar */
+.side-bar{
+  background-color: #282c37;
+  color: #fff;
+  font-size: 11px;
+  padding: 0 20px;
+}
+.filter{
+  height: 88px;
+  display: flex;
+  align-items: center;
+}
+.filter select{
+  color: #647d80;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #242831;
+}
+.side-bar-item{
+  cursor: pointer;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  margin: 8px 0;
+}
+
+/* content */
+.content-container{
+  height: calc(100vh - 90px);
+  position: relative;
+}
+.content-header{
+  background-color: #f4f7fa;
+  color: #282c37;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-weight: 700;
+  text-shadow: 1px 0 #262626;
+  letter-spacing: 0.5px;
+}
+.header-action{
+  display: flex;
+}
+.header-action img{
+  cursor: pointer;
+  width: 40px;
+}
+.content{
+  height: 100%;
+  width: 100%;
+}
+.content-divide{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+/* Set the size of the div element that contains the map */
+#map{
+  height: 100%;
+}
+.label-pin-reg{
+  color: #fff!important;
+  padding: 5px 10px;
+  background-color: #1e2128;
+  width: fit-content;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.label-pin-large{
+  color: #fff!important;
+  padding: 16px;
+  background-color: rgb(67, 201, 67);;
+  width: fit-content;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+/* description box */
+#description{
+  background-color: #242831;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  font-size: 13px;
+  font-size: 13px;
+  color: #647d80;
+}
+#description img{
+  width: 100%;
+  max-height: 170px;
+}
+.place-name{
+  font-size: 14px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: -5px ;
+  padding: 0 20px;
+  font-weight: 600;
+}
+.desc{
+  padding: 20px;
+}
+.desc-content{
+  padding: 0 20px 20px;
+}
+.address, .web{
+  padding: 5px 20px;
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 2px;
+  align-items: center;
+}
+
+.address img, .web img{
+  width: 16px!important;
+}

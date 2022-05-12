@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xtremax Front End Developer</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzQjlcQWe-nuxiYSlFOVC-MVROUAlm614&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.1.min.js"
+    ></script>
+  </head>
+  <body>
+    <div id="page" class="page">
+      <div class="side-logo">
+        <div id="sidebar-logo" class="side-logo-items"></div>
+      </div>
+      <div class="side-bar" id="menu-side-bar">
+        <div class="filter">
+          <select type="dropdown">
+            <option disabled selected>Filter by favorite</option>
+            <option value="Test">Test</option>
+          </select>
+        </div>
+        <div id="side-bar-items"></div>
+      </div>
+      <div class="content-container">
+        <div class="content-header">
+          <span> TOP-RATED TOURIST ATTRACTION IN SINGAPORE </span>
+          <div class="header-action">
+            <img src="./img/setting.png" alt="setting" />
+            <img src="./img/question.png" alt="setting" />
+            <img src="./img/close.png" alt="setting" id="close" />
+          </div>
+        </div>
+        <div id="content" class="content">
+          <!--The div element for the map -->
+          <div id="map"></div>
+          <!--The div element for the description -->
+          <div id="description" class="hide"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/map.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
+
+<!-- THIS IS URL OF DOCUMENTATION GOOGLE MAPS API
+https://developers.google.com/maps/documentation/javascript -->
